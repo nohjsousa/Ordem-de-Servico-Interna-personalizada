@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ordem de Serviço</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!--parte interna da loja-->
+    <div class="container">
+      <div class="logo-container">
+        <img src="logo.png" alt="Logomarca" class="logo" />
+      </div>
+      <div class="header-row">
+        <div class="info">
+          <div>
+            <label>OS:</label>
+            <input
+              type="text"
+              name="numero_os"
+              class="input-os numero_os"
+              placeholder="Nº OS"
+            />
+          </div>
+          <div>
+            <label>Data:</label>
+            <input type="date" name="data_os" class="data_os" />
+          </div>
+          <div>
+            <label>Hora:</label>
+            <input type="time" name="hora_os" class="hora_os" />
+          </div>
+          <div class="pesquisa-container">
+            <label>Pesquisar:</label>
+            <input
+              type="search"
+              name="pesquisa"
+              class="campo-pesquisa"
+              placeholder="Buscar..."
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h2>Informações do Cliente</h2>
+        <div class="line">
+          <div>
+            <label>Nome:</label
+            ><input type="text" class="nome" placeholder="Nome completo" />
+          </div>
+          <div>
+            <label>CPF:</label
+            ><input
+              type="text"
+              class="cpf"
+              placeholder="000.000.000-00"
+              maxlength="14"
+            />
+          </div>
+          <div>
+            <label>RG:</label
+            ><input
+              type="text"
+              class="rg"
+              placeholder="00.000.000-0"
+              maxlength="13"
+            />
+          </div>
+          <div>
+            <label>CEP:</label
+            ><input
+              type="text"
+              class="cep"
+              placeholder="00000-000"
+              maxlength="9"
+            />
+          </div>
+        </div>
+        <div class="line">
+          <div>
+            <label>Rua:</label
+            ><input type="text" class="rua" placeholder="Nome da rua" />
+          </div>
+          <div>
+            <label>Nº:</label
+            ><input
+              type="text"
+              class="numero"
+              placeholder="123"
+              maxlength="5"
+            />
+          </div>
+          <div>
+            <label>Cidade:</label
+            ><input type="text" class="cidade" placeholder="Cidade" />
+          </div>
+          <div>
+            <label>UF:</label
+            ><input type="text" class="uf" placeholder="SP" maxlength="2" />
+          </div>
+        </div>
+        <div class="line">
+          <div>
+            <label>Telefone:</label
+            ><input
+              type="text"
+              class="telefone"
+              placeholder="(11) 1234-5678"
+              maxlength="15"
+            />
+          </div>
+          <div>
+            <label>Whats/Fixo:</label
+            ><input
+              type="text"
+              class="whatsapp"
+              placeholder="(11) 99999 - 9999"
+              maxlength="15"
+            />
+          </div>
+          <div>
+            <label>Tipo:</label
+            ><select class="tipoContato">
+              <option value="whatsapp">WhatsApp</option>
+              <option value="fixo">Fixo</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="form-section">
+        <h2>Dados do Produto</h2>
+        <div class="line-5">
+          <div>
+            <label>Produto:</label
+            ><input type="text" class="produto" placeholder="Produto" />
+          </div>
+          <div>
+            <label>Marca:</label
+            ><input type="text" class="marca" placeholder="Marca" />
+          </div>
+          <div>
+            <label>Cor:</label
+            ><input type="text" class="cor" placeholder="Cor" />
+          </div>
+          <div>
+            <label>Série:</label
+            ><input type="text" class="serie" placeholder="Nº de série" />
+          </div>
+          <div>
+            <label>Modelo:</label
+            ><input type="text" class="modelo" placeholder="Modelo" />
+          </div>
+        </div>
+        <div class="line">
+          <div>
+            <label>Ref.:</label
+            ><input type="text" class="referencia" placeholder="Referência" />
+          </div>
+          <div>
+            <label>Defeito:</label
+            ><input
+              type="text"
+              class="defeito"
+              placeholder="Descreva o defeito"
+            />
+          </div>
+          <div>
+            <label>Acessórios:</label
+            ><input
+              type="text"
+              class="acessorios"
+              placeholder="Cabos, fonte, etc."
+            />
+          </div>
+        </div>
+        <div class="line">
+          <div style="flex: 1">
+            <label>Obs.:</label>
+            <textarea
+              class="obs"
+              placeholder="Observações adicionais"
+              rows="3"
+              style="
+                width: 100%;
+                padding: 8px 12px;
+                border: 1px solid #aaa;
+                border-radius: 24px;
+                resize: vertical;
+              "
+            ></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="form-section">
+        <div
+          class="line"
+          style="display: flex; justify-content: center; gap: 20px"
+        >
+          <div style="flex: 1; max-width: 400px">
+            <label>De acordo com:</label>
+            <input type="text" class="deAcordo" placeholder="Nome do cliente" />
+          </div>
+          <div style="flex: 1; max-width: 400px">
+            <label>Retirado por(a):</label>
+            <input
+              type="text"
+              class="retirado"
+              placeholder="Nome do responsável pela retirada"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bloco duplicado (para o cliente) -->
+    <div class="container">
+      <div class="logo-container">
+        <img src="logo.png" alt="Logomarca" class="logo" />
+      </div>
+      <div class="header-row">
+        <div class="info">
+          <div>
+            <label>OS:</label>
+            <input
+              type="text"
+              name="numero_os"
+              class="input-os numero_os"
+              placeholder="Nº OS"
+            />
+          </div>
+          <div>
+            <label>Data:</label>
+            <input type="date" name="data_os" class="data_os" />
+          </div>
+          <div>
+            <label>Hora:</label>
+            <input type="time" name="hora_os" class="hora_os" />
+          </div>
+          <div class="pesquisa-container">
+            <label>Pesquisar:</label>
+            <input
+              type="search"
+              name="pesquisa"
+              class="campo-pesquisa"
+              placeholder="Buscar..."
+            />
+          </div>
+        </div>
+      </div>
+      <div class="form-section">
+        <h2>Informações do Cliente</h2>
+        <div class="line">
+          <div>
+            <label>Nome:</label
+            ><input type="text" class="nome" placeholder="Nome completo" />
+          </div>
+          <div>
+            <label>CPF:</label
+            ><input
+              type="text"
+              class="cpf"
+              placeholder="000.000.000-00"
+              maxlength="14"
+            />
+          </div>
+          <div>
+            <label>RG:</label
+            ><input
+              type="text"
+              class="rg"
+              placeholder="00.000.000-0"
+              maxlength="13"
+            />
+          </div>
+          <div>
+            <label>CEP:</label
+            ><input
+              type="text"
+              class="cep"
+              placeholder="00000-000"
+              maxlength="9"
+            />
+          </div>
+        </div>
+        <div class="line">
+          <div>
+            <label>Rua:</label
+            ><input type="text" class="rua" placeholder="Nome da rua" />
+          </div>
+          <div>
+            <label>Nº:</label
+            ><input
+              type="text"
+              class="numero"
+              placeholder="123"
+              maxlength="5"
+            />
+          </div>
+          <div>
+            <label>Cidade:</label
+            ><input type="text" class="cidade" placeholder="Cidade" />
+          </div>
+          <div>
+            <label>UF:</label
+            ><input type="text" class="uf" placeholder="SP" maxlength="2" />
+          </div>
+        </div>
+        <div class="line">
+          <div>
+            <label>Telefone:</label
+            ><input
+              type="text"
+              class="telefone"
+              placeholder="(11) 1234-5678"
+              maxlength="15"
+            />
+          </div>
+          <div>
+            <label>Whats/Fixo:</label
+            ><input
+              type="text"
+              class="whatsapp"
+              placeholder="(11) 99999 - 9999"
+              maxlength="15"
+            />
+          </div>
+          <div>
+            <label>Tipo:</label
+            ><select class="tipoContato">
+              <option value="whatsapp">WhatsApp</option>
+              <option value="fixo">Fixo</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="form-section">
+        <h2>Dados do Produto</h2>
+        <div class="line-5">
+          <div>
+            <label>Produto:</label
+            ><input type="text" class="produto" placeholder="Produto" />
+          </div>
+          <div>
+            <label>Marca:</label
+            ><input type="text" class="marca" placeholder="Marca" />
+          </div>
+          <div>
+            <label>Cor:</label
+            ><input type="text" class="cor" placeholder="Cor" />
+          </div>
+          <div>
+            <label>Série:</label
+            ><input type="text" class="serie" placeholder="Nº de série" />
+          </div>
+          <div>
+            <label>Modelo:</label
+            ><input type="text" class="modelo" placeholder="Modelo" />
+          </div>
+        </div>
+        <div class="line">
+          <div>
+            <label>Ref.:</label
+            ><input type="text" class="referencia" placeholder="Referência" />
+          </div>
+          <div>
+            <label>Defeito:</label
+            ><input
+              type="text"
+              class="defeito"
+              placeholder="Descreva o defeito"
+            />
+          </div>
+          <div>
+            <label>Acessórios:</label
+            ><input
+              type="text"
+              class="acessorios"
+              placeholder="Cabos, fonte, etc."
+            />
+          </div>
+        </div>
+        <div class="line">
+          <div style="flex: 1">
+            <label>Obs.:</label>
+            <textarea
+              class="obs"
+              placeholder="Observações adicionais"
+              rows="3"
+              style="
+                width: 100%;
+                padding: 8px 12px;
+                border: 1px solid #aaa;
+                border-radius: 24px;
+                resize: vertical;
+              "
+            ></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="form-section">
+        <h2 style="text-align: center">Termos e Condições</h2>
+        <p style="text-align: center">
+          A empresa garante este produto pelo período de noventa dias a contar
+          da data de entrada. A presente garantia abrange única e exclusivamente
+          os defeitos de conserto que se apresentem dentro do prazo acima
+          estabelecido. Torna-se nula a garantia em caso de danos provocados por
+          quedas, maus tratos, agentes da natureza (raios, umidade, etc.), ou se
+          apresentar sinais de ter sido violado e/ou consertado por pessoas não
+          autorizadas pela empresa.
+        </p>
+        <p style="text-align: center">
+          Lembramos que, caso o equipamento não seja retirado no prazo máximo de
+          180 dias após o conserto ou comunicação expressa da empresa, será
+          aplicada a legislação prevista na Lei 2542/22 e o produto será tratado
+          como esquecido. A empresa não se responsabiliza pela procedência do
+          aparelho descrito acima.
+        </p>
+        <p style="text-align: center">
+          O prazo para orçamento é de no mínimo 10 dias úteis. A retirada do
+          aparelho será feita mediante a apresentação da Ordem de Serviço.
+        </p>
+        <div
+          class="line"
+          style="display: flex; justify-content: center; gap: 20px"
+        >
+          <div style="flex: 1; max-width: 400px">
+            <label>De acordo com:</label>
+            <input type="text" class="deAcordo" placeholder="Nome do cliente" />
+          </div>
+          <div style="flex: 1; max-width: 400px">
+            <label>Retirado por(a):</label>
+            <input
+              type="text"
+              class="retirado"
+              placeholder="Nome do responsável pela retirada"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/vanilla-masker/build/vanilla-masker.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+  </body>
+</html>
