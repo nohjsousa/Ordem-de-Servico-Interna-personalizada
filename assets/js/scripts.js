@@ -101,3 +101,15 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+//Ação para SALVAR e EDITAR
+
+document.querySelector(".btn-salvar").addEventListener("click", () => {
+  alert("Dados salvos com sucesso!");
+  // Aqui você pode adicionar o código para salvar os dados (ex: enviar via fetch ou salvar em localStorage)
+});
+
+document.querySelector(".btn-editar").addEventListener("click", () => {
+  alert("Modo de edição ativado!");
+  // Aqui você pode habilitar edição de campos, caso estejam desabilitados
+});
