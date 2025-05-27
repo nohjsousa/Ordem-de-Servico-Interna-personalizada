@@ -8,7 +8,7 @@ Este projeto é uma ferramenta simples e prática para emissão de Ordens de Ser
 - 📦 Informações do produto com marca, cor, modelo, número de série e defeito relatado.  
 - 📄 Termos de responsabilidade claros e impressos na OS.  
 - 🛡️ Máscaras nos campos (CEP, telefone, CPF, RG) para facilitar a digitação.  
-- 🌐 Preenchimento automático de endereço via **API do ViaCEP** e **CNPJ**.  
+- 🌐 Preenchimento automático de endereço via **API do ViaCEP** e **CNPJ** ReceitAws.  
 - 🔄 Sincronização automática entre os dois formulários (cópia para cliente e loja).  
 - 🔍 Campo de pesquisa integrado.  
 - 📱 Layout responsivo e pronto para impressão.
@@ -19,7 +19,7 @@ Este projeto é uma ferramenta simples e prática para emissão de Ordens de Ser
 - 🎨 CSS3  
 - ⚙️ JavaScript (Vanilla)  
 - 🏷️ API ViaCEP
-- 🏷️ API receitaws
+- 🏷️ API ReceitAws
 
 ---
 
